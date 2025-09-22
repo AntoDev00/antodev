@@ -141,7 +141,7 @@ export default function Home() {
         <h2 className="text-5xl font-bold text-center mb-6 text-black dark:text-white">Micro App e Agenti AI</h2>
         
         <p className="text-xl text-center mb-10 max-w-3xl mx-auto text-gray-700 dark:text-gray-300">
-          <strong>Soluzioni di intelligenza artificiale avanzate</strong> per automatizzare processi e migliorare l'efficienza del tuo business.
+          <strong>Soluzioni di intelligenza artificiale avanzate</strong> per automatizzare processi e migliorare l&apos;efficienza del tuo business.
         </p>
         
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
@@ -325,7 +325,7 @@ export default function Home() {
               href="/contact" 
               className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-lg transition-colors text-lg font-medium"
             >
-              Scopri come l'AI può trasformare il tuo business
+              Scopri come l&apos;AI può trasformare il tuo business
             </Link>
           </div>
         </div>
