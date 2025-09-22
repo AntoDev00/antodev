@@ -5,7 +5,14 @@
 [[plugins]]
   package = "@netlify/plugin-nextjs"
 
+# Questi redirects aiutano con la navigazione SPA
 [[redirects]]
   from = "/*"
   to = "/index.html"
   status = 200
+
+# Assicura che gli asset statici vengano serviti correttamente
+[[headers]]
+  for = "/_next/*"
+    [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
