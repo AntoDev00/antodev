@@ -135,6 +135,201 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      {/* Sezione Micro App e Agenti AI */}
+      <section className="max-w-6xl mx-auto py-20 px-4 bg-gradient-to-r from-slate-50 to-blue-50 dark:from-gray-900 dark:to-gray-800 rounded-2xl">
+        <h2 className="text-5xl font-bold text-center mb-6 text-black dark:text-white">Micro App e Agenti AI</h2>
+        
+        <p className="text-xl text-center mb-10 max-w-3xl mx-auto text-gray-700 dark:text-gray-300">
+          <strong>Soluzioni di intelligenza artificiale avanzate</strong> per automatizzare processi e migliorare l'efficienza del tuo business.
+        </p>
+        
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-12">
+          <Card className="border-2 border-blue-200 dark:border-blue-900 shadow-lg hover:shadow-xl transition-shadow bg-white dark:bg-gray-900">
+            <CardHeader>
+              <div className="flex items-center justify-center h-16 w-16 rounded-full bg-blue-100 dark:bg-blue-900 mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-blue-500">
+                  <path d="M19 9V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v3"></path>
+                  <path d="M3 11v5a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v2H7v-2a2 2 0 0 0-4 0Z"></path>
+                  <path d="M5 18v2"></path>
+                  <path d="M19 18v2"></path>
+                </svg>
+              </div>
+              <CardTitle className="text-2xl font-bold text-black dark:text-white">Settore Finanziario</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul className="space-y-3">
+                <li className="flex items-start">
+                  <span className="mr-2 text-blue-500 mt-1">•</span>
+                  <span className="text-gray-700 dark:text-gray-300">Assistenti virtuali per analisi finanziaria</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2 text-blue-500 mt-1">•</span>
+                  <span className="text-gray-700 dark:text-gray-300">Automazione processi di risk management</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2 text-blue-500 mt-1">•</span>
+                  <span className="text-gray-700 dark:text-gray-300">Chatbot per consulenza agli investitori</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2 text-blue-500 mt-1">•</span>
+                  <span className="text-gray-700 dark:text-gray-300">Sistemi di previsione e trend analysis</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+          
+          <Card className="border-2 border-green-200 dark:border-green-900 shadow-lg hover:shadow-xl transition-shadow bg-white dark:bg-gray-900">
+            <CardHeader>
+              <div className="flex items-center justify-center h-16 w-16 rounded-full bg-green-100 dark:bg-green-900 mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-green-500">
+                  <rect width="16" height="16" x="4" y="4" rx="2"></rect>
+                  <rect width="6" height="6" x="9" y="9" rx="1"></rect>
+                  <path d="M15 2v2"></path>
+                  <path d="M15 20v2"></path>
+                  <path d="M2 15h2"></path>
+                  <path d="M20 15h2"></path>
+                </svg>
+              </div>
+              <CardTitle className="text-2xl font-bold text-black dark:text-white">Settore Logistico</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul className="space-y-3">
+                <li className="flex items-start">
+                  <span className="mr-2 text-green-500 mt-1">•</span>
+                  <span className="text-gray-700 dark:text-gray-300">Ottimizzazione percorsi di consegna</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2 text-green-500 mt-1">•</span>
+                  <span className="text-gray-700 dark:text-gray-300">Gestione automatizzata del magazzino</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2 text-green-500 mt-1">•</span>
+                  <span className="text-gray-700 dark:text-gray-300">Previsioni domanda e supply chain</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2 text-green-500 mt-1">•</span>
+                  <span className="text-gray-700 dark:text-gray-300">Monitoraggio flotte in tempo reale</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+          
+          <Card className="border-2 border-purple-200 dark:border-purple-900 shadow-lg hover:shadow-xl transition-shadow bg-white dark:bg-gray-900">
+            <CardHeader>
+              <div className="flex items-center justify-center h-16 w-16 rounded-full bg-purple-100 dark:bg-purple-900 mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-purple-500">
+                  <path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z"></path>
+                  <path d="M17 21h4"></path>
+                </svg>
+              </div>
+              <CardTitle className="text-2xl font-bold text-black dark:text-white">Settore Immobiliare</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <ul className="space-y-3">
+                <li className="flex items-start">
+                  <span className="mr-2 text-purple-500 mt-1">•</span>
+                  <span className="text-gray-700 dark:text-gray-300">Agenti virtuali per ricerca immobili</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2 text-purple-500 mt-1">•</span>
+                  <span className="text-gray-700 dark:text-gray-300">Valutazione automatizzata proprietà</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2 text-purple-500 mt-1">•</span>
+                  <span className="text-gray-700 dark:text-gray-300">Assistenti per gestione affitti</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="mr-2 text-purple-500 mt-1">•</span>
+                  <span className="text-gray-700 dark:text-gray-300">Analisi predittiva mercato immobiliare</span>
+                </li>
+              </ul>
+            </CardContent>
+          </Card>
+        </div>
+        
+        <div className="max-w-3xl mx-auto bg-white dark:bg-gray-900 rounded-xl shadow-lg p-8 border border-gray-200 dark:border-gray-800">
+          <h3 className="text-2xl font-bold text-center mb-4 text-black dark:text-white">Perché scegliere i miei servizi AI?</h3>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div className="flex items-start">
+              <div className="flex-shrink-0 mr-3">
+                <div className="h-10 w-10 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-blue-500">
+                    <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                    <path d="M9 13v-1h6v1"></path>
+                    <path d="M11 18h2"></path>
+                    <path d="M12 12v6"></path>
+                  </svg>
+                </div>
+              </div>
+              <div>
+                <h4 className="font-semibold text-black dark:text-white mb-1">Soluzioni Personalizzate</h4>
+                <p className="text-gray-600 dark:text-gray-400 text-sm">Ogni agente AI è progettato su misura per le esigenze specifiche del tuo business</p>
+              </div>
+            </div>
+            
+            <div className="flex items-start">
+              <div className="flex-shrink-0 mr-3">
+                <div className="h-10 w-10 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-green-500">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"></path>
+                  </svg>
+                </div>
+              </div>
+              <div>
+                <h4 className="font-semibold text-black dark:text-white mb-1">Privacy e Sicurezza</h4>
+                <p className="text-gray-600 dark:text-gray-400 text-sm">Massima attenzione alla protezione dei dati e conformità normativa</p>
+              </div>
+            </div>
+            
+            <div className="flex items-start">
+              <div className="flex-shrink-0 mr-3">
+                <div className="h-10 w-10 rounded-full bg-purple-100 dark:bg-purple-900 flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-purple-500">
+                    <path d="m18 16 4-4-4-4"></path>
+                    <path d="m6 8-4 4 4 4"></path>
+                    <path d="m14.5 4-5 16"></path>
+                  </svg>
+                </div>
+              </div>
+              <div>
+                <h4 className="font-semibold text-black dark:text-white mb-1">Integrazione Seamless</h4>
+                <p className="text-gray-600 dark:text-gray-400 text-sm">Facile integrazione con i tuoi sistemi e processi esistenti</p>
+              </div>
+            </div>
+            
+            <div className="flex items-start">
+              <div className="flex-shrink-0 mr-3">
+                <div className="h-10 w-10 rounded-full bg-amber-100 dark:bg-amber-900 flex items-center justify-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-amber-500">
+                    <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+                    <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+                    <path d="M4 22h16"></path>
+                    <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
+                    <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
+                    <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path>
+                  </svg>
+                </div>
+              </div>
+              <div>
+                <h4 className="font-semibold text-black dark:text-white mb-1">Supporto Continuo</h4>
+                <p className="text-gray-600 dark:text-gray-400 text-sm">Assistenza post-implementazione e aggiornamenti regolari</p>
+              </div>
+            </div>
+          </div>
+          
+          <div className="text-center mt-8">
+            <Link 
+              href="/contact" 
+              className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white rounded-lg transition-colors text-lg font-medium"
+            >
+              Scopri come l'AI può trasformare il tuo business
+            </Link>
+          </div>
+        </div>
+      </section>
       
       {/* Sezione E-commerce Shopify */}
       <section className="max-w-6xl mx-auto py-20 px-4">
