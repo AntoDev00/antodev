@@ -13,7 +13,7 @@ export default function About() {
           {/* Immagine desktop (visibile solo su sm e superiori) */}
           <div className="rounded-xl hidden sm:block w-full" style={{ height: '500px' }}>
             <Image 
-              src="/FotoDesktop.png" 
+              src="/FOTOProfilo.png" 
               alt="Foto profilo" 
               fill 
               className="object-contain object-center rounded-xl" 
@@ -24,7 +24,7 @@ export default function About() {
           {/* Immagine mobile (visibile solo su xs) */}
           <div className="rounded-xl block sm:hidden w-full mx-auto" style={{ height: '700px', maxWidth: '350px' }}>
             <Image 
-              src="/FotoMobile.png" 
+              src="/FOTOProfilo.png" 
               alt="Foto profilo" 
               fill 
               className="object-contain object-center rounded-xl" 

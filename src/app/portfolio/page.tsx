@@ -26,8 +26,7 @@ const projects = [
     description: "Software aziendale completo per la gestione di magazzino, logistica e dipendenti. Sistema integrato per ottimizzare i processi operativi aziendali.",
     image: "/SoftwareAzienda.png",
     tags: ["React", "Node.js", "MongoDB", "Express"],
-    githubUrl: "https://github.com/AntoDev00/Daphne",
-    demoUrl: "https://antodev00.github.io/Daphne"
+    githubUrl: "https://github.com/AntoDev00/Daphne"
   },
   {
     title: "MindTop - App di Meditazione",
@@ -99,14 +98,16 @@ export default function Portfolio() {
                   priority={index < 2}
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <Link 
-                    href={project.demoUrl} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="px-4 py-2 bg-white text-black font-medium rounded-lg hover:bg-opacity-90 transition-all transform hover:scale-105 mr-3"
-                  >
-                    Demo Live
-                  </Link>
+                  {project.demoUrl && (
+                    <Link 
+                      href={project.demoUrl} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="px-4 py-2 bg-white text-black font-medium rounded-lg hover:bg-opacity-90 transition-all transform hover:scale-105 mr-3"
+                    >
+                      Demo Live
+                    </Link>
+                  )}
                   <Link 
                     href={project.githubUrl} 
                     target="_blank" 
@@ -129,14 +130,16 @@ export default function Portfolio() {
                     ))}
                   </div>
                   <div className="flex justify-between items-center mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
-                    <Link 
-                      href={project.demoUrl} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="text-blue-600 dark:text-blue-400 hover:underline text-sm font-medium"
-                    >
-                      Visita Demo
-                    </Link>
+                    {project.demoUrl && (
+                      <Link 
+                        href={project.demoUrl} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-blue-600 dark:text-blue-400 hover:underline text-sm font-medium"
+                      >
+                        Visita Demo
+                      </Link>
+                    )}
                     <Link 
                       href={project.githubUrl} 
                       target="_blank" 
