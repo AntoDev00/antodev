@@ -1,10 +1,19 @@
 "use client";
 
+import Head from "next/head";
 import Image from "next/image";
 
 export default function About() {
   return (
-    <div className="px-4 py-32 space-y-24">
+    <>
+      <Head>
+        <link
+          rel="preload"
+          as="image"
+          href="/FOTOProfilo.png"
+        />
+      </Head>
+      <div className="px-4 py-32 space-y-24">
       <section className="max-w-5xl mx-auto pt-20">
         <h1 className="text-4xl sm:text-4xl md:text-6xl lg:text-7xl tracking-[6px] sm:tracking-[12px] md:tracking-[20px] font-bold text-black dark:text-white text-center mb-20">Chi sono</h1>
         
@@ -50,6 +59,7 @@ export default function About() {
           </p>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 }
