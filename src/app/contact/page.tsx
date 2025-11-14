@@ -18,7 +18,7 @@ export default function Contact() {
   // Email dove riceverai i messaggi (sostituisci con la tua email)
   const formEmail = "infodomtech00@gmail.com";
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = () => {
     if (isSubmitting) return;
     setIsSubmitting(true);
   };
