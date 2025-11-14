@@ -91,6 +91,12 @@ export default function Contact() {
               </button>
             </div>
           </form>
+          <p className="mt-6 text-center text-sm text-gray-600 dark:text-gray-300">
+            Oppure contattami direttamente a
+            <a href="mailto:infodomtech00@gmail.com" className="text-blue-600 dark:text-blue-400 font-medium ml-1">
+              infodomtech00@gmail.com
+            </a>
+          </p>
         </div>
       </section>
     </div>
