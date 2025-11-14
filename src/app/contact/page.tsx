@@ -1,36 +1,26 @@
 "use client";
 
-import { useState } from "react";
-import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 
 export default function Contact() {
-  const router = useRouter();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [successRedirect, setSuccessRedirect] = useState("https://antodev.vercel.app/contact/success");
+  const [errorRedirect, setErrorRedirect] = useState("https://antodev.vercel.app/contact/error");
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      const origin = window.location.origin;
+      setSuccessRedirect(`${origin}/contact/success`);
+      setErrorRedirect(`${origin}/contact/error`);
+    }
+  }, []);
   
   // Email dove riceverai i messaggi (sostituisci con la tua email)
   const formEmail = "infodomtech00@gmail.com";
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    if (isSubmitting) return;
     setIsSubmitting(true);
-    
-    try {
-      const form = e.currentTarget;
-      const formData = new FormData(form);
-      
-      const response = await fetch(`https://formsubmit.co/${formEmail}`, {
-        method: "POST",
-        body: formData
-      });
-      
-      if (response.ok) {
-        router.push("/contact/success");
-      } else {
-        router.push("/contact/error");
-      }
-    } catch {
-      router.push("/contact/error");
-    }
   };
 
   return (
@@ -44,7 +34,8 @@ export default function Contact() {
           
           <form className="space-y-6" onSubmit={handleSubmit} action={`https://formsubmit.co/${formEmail}`} method="POST">
             {/* Campi nascosti per configurare FormSubmit */}
-            <input type="hidden" name="_next" value="https://antodev.vercel.app/contact/success" />
+            <input type="hidden" name="_next" value={successRedirect} />
+            <input type="hidden" name="_error" value={errorRedirect} />
             <input type="hidden" name="_subject" value="Nuovo messaggio dal sito web" />
             <input type="hidden" name="_captcha" value="false" />
             
